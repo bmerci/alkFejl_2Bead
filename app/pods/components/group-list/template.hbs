@@ -1,0 +1,25 @@
+<table class="table table-striped table-hover ">
+    <thead>
+        <tr>
+            <th>Csapatnév</th>
+            <th>Első játékos</th>
+            <th>Második játékos</th>
+        </tr>   
+    </thead>
+    <tbody>
+
+        {{#each groups}}
+        <tr>
+            {{!--{{log this}}--}}
+            <td>{{name}}</td>
+            <td><span class="badge">{{numberOfMessages}}</span> {{firstMemberName}}</td>
+            <td>{{secondMemberName}}</td>
+            <td>
+                {{link-to "Megtekint" "groups.view" this class="btn btn-default btn-sm"}}
+                {{link-to "Szerkeszt" "groups.edit" this class="btn btn-default btn-sm"}}
+                <button {{action "deleteGroup" this}} class="btn btn-danger btn-sm">Töröl</button>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

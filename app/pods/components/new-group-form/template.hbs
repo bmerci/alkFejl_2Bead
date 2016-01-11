@@ -1,0 +1,28 @@
+<form class="form-horizontal" method="post">
+    <fieldset>
+        <div class="form-group {{if groups.name "has-error"}}">
+            <label for="csapatnev" class="col-lg-2 control-label">Csapatnév</label>
+            <div class="col-lg-10">
+                <input class="form-control" id="csapatnev" name="csapatnev" placeholder="Ide jön a csapatnév..." type="text" value="{{data.name}}">
+                <span class="help-block">{{groups.name}}</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="elsoJatekosNeve" class="col-lg-2 control-label">Első játékos neve</label>
+            <div class="col-lg-10">
+                <textarea class="form-control" rows="3" id="elsoJatekosNeve" name="elsoJatekosNeve">{{data.firstMemberName}}</textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="masodikJatekosNeve" class="col-lg-2 control-label">Második játékos neve</label>
+            <div class="col-lg-10">
+                <textarea class="form-control" rows="3" id="masodikJatekosNeve" name="masodikJatekosNeve">{{data.secondMemberName}}</textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+                <button {{action "submit"}} class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </fieldset>
+</form>        

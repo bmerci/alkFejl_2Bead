@@ -9,10 +9,10 @@ A követelmény feltárás során felmérik és összegyűjtik a megrendelt szof
  * Funkcionális elvárások:
     * lehessen új csapatot létrehozni
     * lehessen csapattagokat hozzáadni meglévő csapathoz
-    * lehessen hitelesített felhasználónak meglévő csapatot törölni
-    * lehessen hitelesített felhasználónak meglévő csapatból csapattagot törölni
-    * lehessen hitelesített felhasználónak meglévő csapatot szerkeszteni
-    * lehessen hitelesített felhasználónak meglévő csapatból csapattagot szerkeszteni
+    * lehessen felhasználónak meglévő csapatot törölni
+    * lehessen felhasználónak meglévő csapatból csapattagot törölni
+    * lehessen felhasználónak meglévő csapatot szerkeszteni
+    * lehessen felhasználónak meglévő csapatból csapattagot szerkeszteni
     * lehessen listázni a meglévő csapatokat
  * Nem funkcionális követelmények
     * tartalmazzon két modellt, egy-sok kapcsolatban
@@ -23,7 +23,7 @@ A követelmény feltárás során felmérik és összegyűjtik a megrendelt szof
     * Csapattag: névvel rendelkezik
 3. Használatieset-modell
   * Szerepkörök: 
-    * anonym user, minden user
+    * anonym user
   * Használati eset diagramok:
   * ![use case diagram](images/usecasediagram.png)
   * Egy folyamat pontos menete:
@@ -98,7 +98,7 @@ A követelmény feltárás során felmérik és összegyűjtik a megrendelt szof
 
 ### Tesztelési környezet
 
-Az egységtesztelés _cloud9_ környezetben futtatva, kézzel történt.
+A tesztelés _cloud9_ környezetben futtatva, kézzel történt.
 
 ### Tesztesetek
 
